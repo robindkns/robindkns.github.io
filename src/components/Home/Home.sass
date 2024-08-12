@@ -1,0 +1,72 @@
+.home
+    position: relative
+    width: 100vw
+    height: 100vh
+
+.home-bg
+    background-image: url(../../assets/bg-home.jpg)
+    width: 100vw
+    height: 100vh
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    filter: brightness( 0.6 )
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -1
+
+.home-container
+    width: 100%
+    height: 100%
+    display: flex
+
+.home-left
+    width: 40%
+    display: flex
+    justify-content: center
+    padding-left: 10%
+    flex-direction: column
+    h3
+        font-size: 25px
+        font-weight: 600
+        letter-spacing: 3px
+        color: #81ecec
+    h1
+        font-size: 100px
+        width: 50%
+        color: #f8ebe7
+    h2
+        color: #f8ebe7
+        font-size: 25px
+        display: flex
+        align-items: center
+        gap: 8px
+
+.home-right
+    width: 60%
+    display: flex
+    align-items: center
+    justify-content: center
+
+.circle-bg
+    background-color: black
+    border-radius: 50%
+    width: 250px
+    height: 250px
+    opacity: 0.3
+    animation: reduce-grow 8s infinite ease-in-out
+
+#job
+    color: #81ecec
+
+@keyframes reduce-grow
+    0%
+        width: 50%
+        height: 50%
+    50%
+        width: 60%
+        height: 60%
+    100%
+        width: 50%
+        height: 50%

@@ -1,0 +1,61 @@
+nav
+    display: flex
+    justify-content: flex-end
+    position: fixed
+    top: 0
+    left: 0
+    width: 100vw
+    height: 15vh
+    align-items: center
+    z-index: 10
+    transition: 0.5s
+    ul
+        display: flex
+        align-items: center
+        gap: 40px
+        list-style: none
+        padding-inline: 0
+        width: 38%
+        li
+            a
+                text-decoration: none
+                color: #f8ebe7
+                font-size: 18px
+                transition: 0.5s
+                width: 100%
+                position: relative
+                font-weight: 500
+                &:hover
+                    color: #81ecec
+                    cursor: pointer
+                    &::before
+                        width: 100%
+            a::before
+                content: ''
+                position: absolute
+                width: 0
+                height: 2px
+                background-color: #81ecec
+                bottom: -5px
+                left: 0
+                transition: 0.3s
+    button
+        width: 10%
+        height: 50px
+        font-family: 'Poppins', sans-serif
+        background-color: transparent
+        border: 1.5px solid #81ecec
+        border-radius: 5px
+        color: #f8ebe7
+        font-weight: 500
+        font-size: 15px
+        margin-right: 5%
+        &:hover
+            cursor: pointer
+            background-color: #81ecec
+            color: #736b60
+            border: none
+
+.nav-scrolled
+    height: 10vh
+    background-color: #3f3d37e0
