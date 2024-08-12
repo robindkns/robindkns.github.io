@@ -1,6 +1,7 @@
 import { useState } from 'react'
 
 import './Works.sass'
+import Modal from '../Modal/Modal';
 
 import { FaPlay } from "react-icons/fa";
 
@@ -8,7 +9,7 @@ import IMGUzumi from '../../assets/uzumi.png'
 import IMGRoyella from '../../assets/royella.png'
 import IMGGameHaven from '../../assets/gamehaven.png'
 import IMGMolengeek from '../../assets/molengeek.png'
-// import VideoUzumi from '../../assets/uzumi.mp4'
+import VideoUzumi from '../../assets/uzumi.mp4'
 
 export default function Works() {
 
@@ -16,32 +17,40 @@ export default function Works() {
         {
             "language": ["NextJS", "Sass"],
             "name": "Uzumi - Official Website for Uzumi",
-            "image" : IMGUzumi,
-            "video" : null
+            "image": IMGUzumi,
+            "video": VideoUzumi
         },
         {
             "language": ["NextJS", "Django", "TailwindCSS"],
             "name": "Royella - Final Project of Fullstack Developer Training",
-            "image" : IMGRoyella,
-            "video" : null
+            "image": IMGRoyella,
+            "video": null
         },
         {
-            "language" : ["NextJS", "Redux", "Sass"],
+            "language": ["NextJS", "Redux", "Sass"],
             "name": "GameHaven - Final Project of Frontend Developer Training",
-            "image" : IMGGameHaven,
-            "video" : null
+            "image": IMGGameHaven,
+            "video": null
         },
         {
-            "language": ["HTML", "Sass","JavaScript"],
+            "language": ["HTML", "Sass", "JavaScript"],
             "name": "MolenGeek - Final DOM Project",
-            "image" : IMGMolengeek,
-            "video" : null
+            "image": IMGMolengeek,
+            "video": null
         }
     ]
 
     const [visibleProjects, setVisibleProjects] = useState(3);
     const [height, setHeight] = useState("100vh");
     const [hoveredIndex, setHoveredIndex] = useState(null);
+    const [showModal, setShowModal] = useState(false);
+
+    const openModal = () => setShowModal(true);
+    const closeModal = () => {
+        setShowModal(false)
+        console.log("closeModal");
+        
+    }
 
     const handleShow = () => {
         if (visibleProjects === projects.length) {
@@ -61,26 +70,25 @@ export default function Works() {
             </div>
             <div className="works-body">
                 {projects.slice(0, visibleProjects).map((project, index) => (
-                    <>
-                        <div className="project-container" key={index} onMouseEnter={() => setHoveredIndex(index)} onMouseLeave={() => setHoveredIndex(null)}>
-                            <div className="project-language">
-                                {project.language.map((language, index) => (
-                                    <span key={index}>{language}</span>
-                                ))}
-                            </div>
-                            <div className="project-name">
-                                <h3>{project.name}</h3>
-                            </div>
-                            <div className="project-image">
-                                {hoveredIndex === index ? 
-                                    <img src={project.image} alt={project.name} style={{animation : "showRotate 0.5s ease-in-out forwards"}} />
-                                : <img src={project.image} alt={project.name} style={{animation : "unshowRotate 0.5s ease-in-out forwards"}} />}
-                            </div>
-                            <div className="project-modal">
-                                <FaPlay />
-                            </div>
+                    <div className="project-container" key={index} onMouseEnter={() => setHoveredIndex(index)} onMouseLeave={() => setHoveredIndex(null)}>
+                        <div className="project-language">
+                            {project.language.map((language, index) => (
+                                <span key={index}>{language}</span>
+                            ))}
                         </div>
-                    </>
+                        <div className="project-name">
+                            <h3>{project.name}</h3>
+                        </div>
+                        <div className="project-image">
+                            {hoveredIndex === index ?
+                                <img src={project.image} alt={project.name} style={{ animation: "showRotate 0.5s ease-in-out forwards" }} />
+                                : <img src={project.image} alt={project.name} style={{ animation: "unshowRotate 0.5s ease-in-out forwards" }} />}
+                        </div>
+                        <div className="project-modal" onClick={openModal}>
+                            <FaPlay />
+                            {showModal ? <Modal setShowModal={setShowModal} showModal={showModal} closeModal={closeModal} video={project.video} /> : null}
+                        </div>
+                    </div>
                 ))}
                 <div className="works-footer">
                     {height === "100vh" ? <button onClick={handleShow}>More</button> : <button onClick={handleShow}>Less</button>}

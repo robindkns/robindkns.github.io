@@ -29,7 +29,7 @@ export default function Contact() {
                     </div>
                 </div>
                 <div className="contact-form-container">
-                    <iframe title='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80996.3827940479!2d5.516877821584352!3d50.62457244329398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0f74b8eacfcfb%3A0x40099ab2f4d6b40!2zTGnDqGdl!5e0!3m2!1sfr!2sbe!4v1723476345972!5m2!1sfr!2sbe" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe title='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80996.3827940479!2d5.516877821584352!3d50.62457244329398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0f74b8eacfcfb%3A0x40099ab2f4d6b40!2zTGnDqGdl!5e0!3m2!1sfr!2sbe!4v1723476345972!5m2!1sfr!2sbe" width="600" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                     <div className="form-container">
                         <form>
                             <div className='input-container'>
