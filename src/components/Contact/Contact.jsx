@@ -43,15 +43,15 @@ export default function Contact() {
                 </div>
             </div>
             <div className="contact-footer">
-                <p>Made with React <Atom size={25} color="#81ecec" weight="duotone" /></p>
+                <p>Made with React <Atom color="#81ecec" weight="duotone" /></p>
                 <div className='separator'></div>
                 <div className='contact-status'>
                     <div className='circle-blinking'></div>
                     <span>Available for work</span>
                     <div className="socials">
-                        <a href="https://linkedin.com/in/robin-lefèvre" rel="noreferrer" target='_blank'><LinkedinLogo size={25} weight="duotone" /></a>
-                        <a href="https://github.com/robindkns" rel="noreferrer" target='_blank'><PiGithubLogoDuotone style={{ fontSize: '25px' }} /></a>
-                        <a href="www.linkedin.com/in/robin-lefèvre" target='_blank'><BehanceLogo size={25} weight="duotone" /></a>
+                        <a href="https://linkedin.com/in/robin-lefèvre" rel="noreferrer" target='_blank'><LinkedinLogo weight="duotone" /></a>
+                        <a href="https://github.com/robindkns" rel="noreferrer" target='_blank'><PiGithubLogoDuotone /></a>
+                        <a href="www.linkedin.com/in/robin-lefèvre" target='_blank'><BehanceLogo weight="duotone" /></a>
                     </div>
                 </div>
             </div>
