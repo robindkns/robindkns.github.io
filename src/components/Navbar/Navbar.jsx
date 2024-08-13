@@ -1,6 +1,7 @@
 import './Navbar.sass';
-import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+
+import CV from '../../assets/CVWebDev.png';
 
 export default function Navbar() {
 
@@ -22,25 +23,25 @@ export default function Navbar() {
         <nav className={navClass}>
             <ul>
                 <li>
-                    <Link to='#home'>Home</Link>
+                    <a href='#home'>Home</a>
                 </li>
                 <li>
-                    <Link to='#about'>About</Link>
+                    <a href='#about'>About</a>
                 </li>
                 <li>
-                    <Link to='#skills'>Skills</Link>
+                    <a href='#skills'>Skills</a>
                 </li>
                 <li>
-                    <Link to='#works'>Works</Link>
+                    <a href='#works'>Works</a>
                 </li>
                 <li>
-                    <Link to='#experience'>Experience</Link>
+                    <a href='#experience'>Experience</a>
                 </li>
                 <li>
-                    <Link to='#contact'>Contact</Link>
+                    <a href='#contact'>Contact</a>
                 </li>
             </ul>
-            <button>DOWNLOAD CV</button>
+            <button><a href={CV} download>DOWNLOAD CV</a></button>
         </nav>
     );
 }

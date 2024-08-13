@@ -1,6 +1,9 @@
 import './About.sass';
+
 import URLRobin from '../../assets/robin-about.png';
+import CV from '../../assets/CVWebDev.png';
 import { FaDownload } from "react-icons/fa6";
+
 
 
 export default function About() {
@@ -12,7 +15,7 @@ export default function About() {
                     <img src={URLRobin} alt="Robin Lefèvre" />
                     <div className='about-circle'>
                     </div>
-                    <FaDownload />
+                    <a href={CV} download><FaDownload  /></a>
                 </div>
             </div>
             <div className="about-right">

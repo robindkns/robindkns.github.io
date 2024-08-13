@@ -1,4 +1,5 @@
-import { useState } from 'react'
+/* eslint-disable no-unused-vars */
+import { useEffect, useState } from 'react'
 
 import './Works.sass'
 import Modal from '../Modal/Modal';
@@ -10,10 +11,13 @@ import IMGRoyella from '../../assets/royella.png'
 import IMGGameHaven from '../../assets/gamehaven.png'
 import IMGMolengeek from '../../assets/molengeek.png'
 import VideoUzumi from '../../assets/uzumi.mp4'
+import VideoMolengeek from '../../assets/molengeek.mp4'
+import VideoGameHaven from '../../assets/gamehaven.mp4'
+import VideoRoyella from '../../assets/royella.mp4'
 
 export default function Works() {
 
-    const projects = [
+    const [projects, setProjects] = useState([
         {
             "language": ["NextJS", "Sass"],
             "name": "Uzumi - Official Website for Uzumi",
@@ -24,33 +28,52 @@ export default function Works() {
             "language": ["NextJS", "Django", "TailwindCSS"],
             "name": "Royella - Final Project of Fullstack Developer Training",
             "image": IMGRoyella,
-            "video": null
+            "video": VideoRoyella
         },
         {
             "language": ["NextJS", "Redux", "Sass"],
             "name": "GameHaven - Final Project of Frontend Developer Training",
             "image": IMGGameHaven,
-            "video": null
+            "video": VideoGameHaven
         },
         {
             "language": ["HTML", "Sass", "JavaScript"],
             "name": "MolenGeek - Final DOM Project",
             "image": IMGMolengeek,
-            "video": null
+            "video": VideoMolengeek
         }
-    ]
+    ])
 
     const [visibleProjects, setVisibleProjects] = useState(3);
     const [height, setHeight] = useState("100vh");
     const [hoveredIndex, setHoveredIndex] = useState(null);
     const [showModal, setShowModal] = useState(false);
+    const [hoveredVideo, setHoveredVideo] = useState(null);
 
-    const openModal = () => setShowModal(true);
+    const openModal = () => {
+        setShowModal(true);
+    }
     const closeModal = () => {
         setShowModal(false)
         console.log("closeModal");
-        
+        console.log(showModal);
+
     }
+
+    useEffect(() => {
+        console.log("showModal: ", showModal);
+    }, [showModal]);
+
+    useEffect(() => {
+        console.log("hoveredIndex: ", hoveredIndex);
+        if (hoveredIndex !== null) {
+            setHoveredVideo(projects[hoveredIndex].video);
+        }
+    }, [hoveredIndex, projects]);
+
+    useEffect(() => {
+        console.log("hoveredVideo: ", hoveredVideo);
+    }, [hoveredVideo]);
 
     const handleShow = () => {
         if (visibleProjects === projects.length) {
@@ -84,12 +107,12 @@ export default function Works() {
                                 <img src={project.image} alt={project.name} style={{ animation: "showRotate 0.5s ease-in-out forwards" }} />
                                 : <img src={project.image} alt={project.name} style={{ animation: "unshowRotate 0.5s ease-in-out forwards" }} />}
                         </div>
-                        <div className="project-modal" onClick={openModal}>
-                            <FaPlay />
-                            {showModal ? <Modal setShowModal={setShowModal} showModal={showModal} closeModal={closeModal} video={project.video} /> : null}
+                        <div className="project-modal">
+                            <FaPlay onClick={openModal} />
                         </div>
                     </div>
                 ))}
+                {showModal ? <Modal setShowModal={setShowModal} showModal={showModal} closeModal={closeModal} video={hoveredVideo} /> : null}
                 <div className="works-footer">
                     {height === "100vh" ? <button onClick={handleShow}>More</button> : <button onClick={handleShow}>Less</button>}
                 </div>

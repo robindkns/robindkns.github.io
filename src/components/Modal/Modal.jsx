@@ -1,17 +1,17 @@
-// Modal.js
 import './Modal.sass';
 import { useEffect } from 'react';
 import { IoMdCloseCircleOutline } from "react-icons/io";
 
 export default function Modal(props) {
+    
     useEffect(() => {
-        document.body.classList.toggle('no-scroll', props.showModal);
+        const originalStyle = window.getComputedStyle(document.body).overflow;
+        document.body.style.overflow = 'hidden';
+
         return () => {
-            document.body.classList.remove('no-scroll');
+            document.body.style.overflow = originalStyle;
         };
     }, [props.showModal]);
-
-    if (!props.showModal) return null;
 
     return (
         <>
