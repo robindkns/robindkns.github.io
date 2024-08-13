@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.04195159.css",
+    "main.js": "/static/js/main.df33ffb6.js",
+    "static/media/royella.mp4": "/static/media/royella.cf79effb3031241b4687.mp4",
+    "static/media/gamehaven.mp4": "/static/media/gamehaven.49d0a5c537eae734a346.mp4",
+    "static/media/molengeek.mp4": "/static/media/molengeek.f714d9273c4dfdd25e4b.mp4",
+    "static/media/uzumi.mp4": "/static/media/uzumi.7ad7ff8c7fbf6b93b7a2.mp4",
+    "static/media/royella.png": "/static/media/royella.e63ef4005b0f82fb97cf.png",
+    "static/media/gamehaven.png": "/static/media/gamehaven.1a7be8a90234c4db9408.png",
+    "static/media/bg-skills.png": "/static/media/bg-skills.f6f16100c1255051c28c.png",
+    "static/media/uzumi.png": "/static/media/uzumi.5217755a1bd93ce5f2fc.png",
+    "static/media/molengeek.png": "/static/media/molengeek.017ed493ee85a5652a13.png",
+    "static/media/bg-home.jpg": "/static/media/bg-home.e34a37e9ad5320418759.jpg",
+    "static/media/robin-about.png": "/static/media/robin-about.0c07060ab3ec7ca7b0fa.png",
+    "static/media/experience-bg.jpg": "/static/media/experience-bg.c7847d15385f52b5ff25.jpg",
+    "static/media/formation-bg.jpg": "/static/media/formation-bg.285b892bdd8b9aa56143.jpg",
+    "static/media/CVWebDev.png": "/static/media/CVWebDev.16d269c375165c4bf956.png",
+    "static/media/circle-download.PNG": "/static/media/circle-download.4d027cc329948c3fb62d.PNG",
+    "index.html": "/index.html",
+    "main.04195159.css.map": "/static/css/main.04195159.css.map",
+    "main.df33ffb6.js.map": "/static/js/main.df33ffb6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.04195159.css",
+    "static/js/main.df33ffb6.js"
+  ]
+}
