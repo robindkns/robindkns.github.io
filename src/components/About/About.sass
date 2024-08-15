@@ -104,20 +104,6 @@
     to
         transform: rotate(360deg)
 
-/* Téléphones très petits */
-@media (max-width: 320px) 
-/* Téléphones petits */
-@media (max-width: 480px) 
-/* Téléphones moyens à grands */
-@media (max-width: 768px) 
-/* Tablettes */
-@media (max-width: 1024px) 
-/* Ordinateurs portables */
-@media (max-width: 1280px) 
-/* Ordinateurs de bureau */
-@media (max-width: 1440px) 
-/* Écrans larges et ultra-larges */
-@media (min-width: 1920px)
 /* Écrans très larges (comme les 32 pouces 4K) */
 @media (min-width: 2560px)
     .about-left
@@ -134,3 +120,59 @@
             margin-block: 70px
     .about-text
         font-size: 22px
+
+/* Écrans larges et ultra-larges */
+@media (min-width: 1920px)
+    .about-left
+        span
+            font-size: 200px
+    .about-img-container
+        img
+            width: 400px
+
+/* Ordinateurs de bureau */
+@media (max-width: 1440px)
+    .about-right
+        h1
+            font-size: 40px
+        p
+            font-size: 17px
+    .about-text
+        font-size: 16px
+
+/* Ordinateurs portables */
+@media (max-width: 1280px) 
+    .about-left
+        img
+            width: 370px
+    .about-right
+        h1
+            font-size: 35px
+        p
+            font-size: 16px
+    .about-text
+        font-size: 14px
+
+/* Tablettes */
+@media (max-width: 1024px) 
+    .about
+        flex-direction: column
+        height: auto
+    .about-left
+        padding-top: 100px
+        img
+            width: 300px
+    .about-right
+        width: 80%
+        padding-bottom: 100px
+    .info
+        font-size: 16px
+    .text
+        font-size: 16px
+
+/* Téléphones très petits */
+@media (max-width: 320px) 
+/* Téléphones petits */
+@media (max-width: 480px) 
+/* Téléphones moyens à grands */
+@media (max-width: 768px) 

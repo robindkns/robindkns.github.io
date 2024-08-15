@@ -25,7 +25,7 @@ export default function Works() {
             "video": VideoUzumi
         },
         {
-            "language": ["NextJS", "Django", "TailwindCSS"],
+            "language": ["NextJS", "Django", "TailwindCSS","Redux"],
             "name": "Royella - Final Project of Fullstack Developer Training",
             "image": IMGRoyella,
             "video": VideoRoyella

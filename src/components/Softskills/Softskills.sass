@@ -59,20 +59,6 @@
         color: #b7b4b0
         font-size: 15px
 
-/* Téléphones très petits */
-@media (max-width: 320px) 
-/* Téléphones petits */
-@media (max-width: 480px) 
-/* Téléphones moyens à grands */
-@media (max-width: 768px) 
-/* Tablettes */
-@media (max-width: 1024px) 
-/* Ordinateurs portables */
-@media (max-width: 1280px) 
-/* Ordinateurs de bureau */
-@media (max-width: 1440px) 
-/* Écrans larges et ultra-larges */
-@media (min-width: 1920px)
 /* Écrans très larges (comme les 32 pouces 4K) */
 @media (min-width: 2560px)
     .soft-content 
@@ -82,3 +68,55 @@
             font-size: 40px
         p
             font-size: 20px
+
+/* Écrans larges et ultra-larges */
+@media (min-width: 1920px)
+    .soft-content
+        h3
+            font-size: 30px
+        p
+            font-size: 18px
+
+/* Ordinateurs de bureau */
+@media (max-width: 1440px) 
+    .soft-content
+        svg
+            font-size: 80px
+        h3
+            font-size: 22px
+        p
+            font-size: 15px
+
+/* Ordinateurs portables */
+@media (max-width: 1280px) 
+    .soft-container
+        width: 85%
+    .soft-content
+        padding-block: 20%
+        svg
+            font-size: 85px
+        h3
+            font-size: 22px
+        p
+            font-size: 14px
+
+/* Tablettes */
+@media (max-width: 1024px) 
+    .soft-content-container
+        height: 65%
+    .soft-content
+        height: 80%
+        padding-block: 15%
+        svg
+            font-size: 70px
+        h3
+            font-size: 18px
+        p
+            font-size: 13px
+
+/* Téléphones très petits */
+@media (max-width: 320px) 
+/* Téléphones petits */
+@media (max-width: 480px) 
+/* Téléphones moyens à grands */
+@media (max-width: 768px) 

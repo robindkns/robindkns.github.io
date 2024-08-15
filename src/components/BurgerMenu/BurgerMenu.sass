@@ -1,0 +1,88 @@
+.burger-menu
+    .burger-icon
+        position: relative
+        width: 40px
+        height: 40px
+        display: flex
+        justify-content: center
+        align-items: center
+        cursor: pointer
+        background: none
+        border: none
+        z-index: 20
+        margin-right: 20px
+        svg
+            width: 100%
+            height: 100%
+            color: #f8ebe7
+    .menu
+        visibility: hidden
+        opacity: 0
+        position: fixed
+        left: 0
+        background-color: #81ecec
+        width: 50%
+        height: 100vh
+        border-top-right-radius: 8px
+        border-bottom-right-radius: 8px
+        transform: translateX(-100%) // Initialement hors de l'écran à gauche
+        transition: transform 0.2s, visibility 0.2s, opacity 0.2s 
+        overflow: hidden
+        z-index: 20
+        align-items: flex-start
+        display: flex
+        &.open
+            visibility: visible
+            opacity: 1
+            flex-direction: column
+            justify-content: flex-start
+            align-items: flex-end
+            transform: translateX(0) // Le menu glisse vers l'intérieur à sa position d'origine
+            transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out, visibility 0.4s ease-in-out // Plus rapide pour la fermeture
+            svg
+                font-size: 40px
+                margin-top: 20px
+                margin-right: 10px
+                color: #3c3935
+        ul
+            list-style-type: none
+            padding: 0
+            margin-top: 50px
+            display: flex
+            flex-direction: column
+            width: 100%
+            gap: 15px
+            align-items: flex-start
+            li
+                margin-left: 50px
+                &:last-child
+                    border-bottom: none
+                a
+                    font-size: 18px
+                    text-decoration: none
+                    color: #3c3935
+                    transition: 0.2s
+                    &:hover
+                        color: #f8ebe7
+
+.socials-burger
+    display: flex
+    width: 87%
+    flex-direction: column
+    margin-top: 50px
+    span
+        font-size: 20px
+        font-weight: 600
+        color: #3c3935
+        text-transform: uppercase
+        letter-spacing: 1px
+        transition: 0.3s
+    svg
+        &:hover
+            scale: 1.2
+            color: #f8ebe7
+
+/* Masquer le menu burger sur les grandes résolutions */
+@media (min-width: 769px) 
+    .burger-menu
+        display: none

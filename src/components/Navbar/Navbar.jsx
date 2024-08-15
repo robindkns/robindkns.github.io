@@ -2,6 +2,7 @@ import './Navbar.sass';
 import { useState, useEffect } from 'react';
 
 import CV from '../../assets/CVWebDev.png';
+import BurgerMenu from '../BurgerMenu/BurgerMenu';
 
 export default function Navbar() {
 
@@ -42,6 +43,7 @@ export default function Navbar() {
                 </li>
             </ul>
             <button><a href={CV} download>DOWNLOAD CV</a></button>
+            <BurgerMenu />
         </nav>
     );
 }

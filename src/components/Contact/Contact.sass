@@ -39,6 +39,8 @@
     width: 25%
     flex-direction: column
     align-items: center
+    svg
+        font-size: 40px
 
 .contact-info-title
     color: #f8ebe7
@@ -144,6 +146,8 @@
         gap: 5px
         height: 25px
         width: 25%
+        svg
+            font-size: 25px
 
 .separator
     height: 28px
@@ -194,21 +198,6 @@
         opacity: 1
         scale: 1
 
-
-/* Téléphones très petits */
-@media (max-width: 320px) 
-/* Téléphones petits */
-@media (max-width: 480px) 
-/* Téléphones moyens à grands */
-@media (max-width: 768px) 
-/* Tablettes */
-@media (max-width: 1024px) 
-/* Ordinateurs portables */
-@media (max-width: 1280px) 
-/* Ordinateurs de bureau */
-@media (max-width: 1440px) 
-/* Écrans larges et ultra-larges */
-@media (min-width: 1920px)
 /* Écrans très larges (comme les 32 pouces 4K) */
 @media (min-width: 2560px)
     .contact-header
@@ -242,3 +231,52 @@
         animation: blink 1s infinite
     .socials
         gap: 20px
+
+/* Écrans larges et ultra-larges */
+@media (min-width: 1920px)
+    .contact-info
+        svg
+            font-size: 45px
+    .contact-info-title
+        font-size: 22px
+    .contact-info-text
+        font-size: 17px
+    .input-container
+        input
+            font-size: 16px
+    .contact-form-container
+        margin-top: 80px
+
+/* Ordinateurs portables */
+@media (max-width: 1280px) 
+    .contact-header
+        h1
+            font-size: 40px
+
+/* Tablettes */
+@media (max-width: 1024px) 
+    .contact-header
+        h1
+            font-size: 35px
+        h3
+            font-size: 20px
+    .contact-form-container
+        iframe
+            width: 45%
+    .form-container
+        button
+            font-size: 15px
+    .contact-status span
+        font-size: 13px
+    .contact-footer
+        p
+            font-size: 13px
+        svg
+            font-size: 25px
+
+/* Téléphones très petits */
+@media (max-width: 320px) 
+/* Téléphones petits */
+@media (max-width: 480px) 
+/* Téléphones moyens à grands */
+@media (max-width: 768px) 

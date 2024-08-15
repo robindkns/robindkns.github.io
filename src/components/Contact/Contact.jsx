@@ -13,18 +13,18 @@ export default function Contact() {
             <div className="contact-body">
                 <div className='contact-infos'>
                     <div className="contact-info">
-                        <PhoneCall size={40} color="#81ecec" weight="duotone" />
+                        <PhoneCall color="#81ecec" weight="duotone" />
                         <span className='contact-info-title'>Call Me</span>
                         <span className='contact-info-text'>+324 92 95 62 00</span>
                     </div>
                     <div className="contact-info">
-                        <Envelope size={40} color="#81ecec" weight="duotone" />
+                        <Envelope color="#81ecec" weight="duotone" />
                         <span className='contact-info-title'>Email</span>
                         <span className='contact-info-text'>robinlefevre85@gmail.com</span>
                     </div>
                     <div className="contact-info">
-                        <NavigationArrow size={40} color="#81ecec" weight="duotone" />
-                        <span className='contact-info-title'>Address</span>
+                        <NavigationArrow color="#81ecec" weight="duotone" />
+                        <span className='contact-info-title'>Location</span>
                         <span className='contact-info-text'>Liège, Belgium</span>
                     </div>
                 </div>

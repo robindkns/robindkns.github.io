@@ -65,20 +65,7 @@ nav
     height: 10vh
     background-color: #3f3d3776
 
-/* Téléphones très petits */
-@media (max-width: 320px) 
-/* Téléphones petits */
-@media (max-width: 480px) 
-/* Téléphones moyens à grands */
-@media (max-width: 768px) 
-/* Tablettes */
-@media (max-width: 1024px) 
-/* Ordinateurs portables */
-@media (max-width: 1280px) 
-/* Ordinateurs de bureau */
-@media (max-width: 1440px) 
-/* Écrans larges et ultra-larges */
-@media (min-width: 1920px) 
+
 /* Écrans très larges (comme les 32 pouces 4K) */
 @media (min-width: 2560px)
     nav
@@ -88,3 +75,56 @@ nav
                 font-size: 22px
         button
             font-size: 20px
+
+/* Écrans larges et ultra-larges */
+@media (min-width: 1920px) 
+    nav
+        ul
+            width: 35%
+
+/* Ordinateurs de bureau */
+@media (max-width: 1440px) 
+    nav
+        ul
+            width: 45%
+            li a 
+                font-size: 17px
+        button
+            font-size: 15px
+
+/* Ordinateurs portables */
+@media (max-width: 1280px) 
+    nav
+        ul
+            width: 45%
+            li a 
+                font-size: 15px
+        button
+            font-size: 13px
+            margin-right: 8%
+
+/* Tablettes */
+@media (max-width: 1024px) 
+    nav
+        ul
+            width: 55%
+            li a 
+                font-size: 15px
+        button
+            font-size: 11px
+
+/* Téléphones moyens à grands */
+@media (max-width: 768px) 
+    nav 
+        button
+            margin-right: 3%
+            width: 20%
+            font-size: 14px
+        ul
+            display: none
+
+/* Téléphones très petits */
+@media (max-width: 320px) 
+/* Téléphones petits */
+@media (max-width: 480px) 
+
