@@ -100,7 +100,6 @@
         display: flex
         justify-content: center
         &:hover
-            cursor: pointer
             background-color: #81ecec
             color: #736b60
 
@@ -137,21 +136,100 @@
 
 /* Tablettes */
 @media (max-width: 1024px) 
+    .works
+        height: auto
     .works-header
         h1
             font-size: 40px
         h3
             font-size: 20px
     .project-container
-        height: 180px
+        height: 160px
     .project-name
         font-size: 20px
     .project-language
         font-size: 15px
 
-/* Téléphones très petits */
-@media (max-width: 320px) 
-/* Téléphones petits */
-@media (max-width: 480px) 
 /* Téléphones moyens à grands */
 @media (max-width: 768px) 
+    .works-header
+        width: 90%
+        padding-block: 8%
+    .works-body
+        width: 90%
+    .project-container
+        height: 180px
+    .project-name
+        width: 40%
+        h3
+            font-size: 20px
+    .project-language
+        font-size: 13px
+    .project-image
+        width: 35%
+
+/* Téléphones petits */
+@media (max-width: 480px) 
+    .works
+        height: auto !important
+    .works-header
+        padding-block: 15%
+        height: auto
+    .works-body
+        height: auto
+    .project-language
+        flex-direction: row
+        gap: 15px
+        width: 100%
+        justify-content: flex-start
+    .project-name
+        width: 100%
+        h3
+            font-size: 20px
+    .project-container
+        flex-direction: column
+        height: auto
+        padding-block: 40px
+        gap: 10px
+    .project-image
+        width: 100%
+        margin-top: 50px
+        justify-content: center
+        img
+            width: 70%
+    .project-modal
+        width: 100%
+        padding-top: 20px
+        justify-content: center
+
+/* Téléphones petits */
+@media (max-width: 430px)
+    .works-header
+        width: 80%
+        h1
+            font-size: 30px
+    .works-body
+        width: 80%
+    .works-footer
+        button
+            width: 25%
+            font-size: 17px
+
+/* Téléphones petits */
+@media (max-width: 425px)
+    .works-footer
+        button
+            width: 30%
+
+/* Téléphones très petits */
+@media (max-width: 320px) 
+    .works-header
+        h1
+            font-size: 25px
+        h3
+            font-size: 15px
+    .project-name
+        h3
+            font-size: 18px
+    .project-language
+        font-size: 12px

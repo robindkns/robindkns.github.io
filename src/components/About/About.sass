@@ -108,10 +108,11 @@
 @media (min-width: 2560px)
     .about-left
         span
-            font-size: 300px
+            font-size: 275px
     .about-img-container
         img
             width: 540px
+            margin-bottom: 60px
     .about-right
         h1
             font-size: 60px
@@ -122,10 +123,10 @@
         font-size: 22px
 
 /* Écrans larges et ultra-larges */
-@media (min-width: 1920px)
+@media (max-width: 1920px)
     .about-left
         span
-            font-size: 200px
+            font-size: 205px
     .about-img-container
         img
             width: 400px
@@ -160,6 +161,9 @@
         height: auto
     .about-left
         padding-top: 100px
+        span
+            font-size: 190px
+            margin-top: 190px
         img
             width: 300px
     .about-right
@@ -170,9 +174,99 @@
     .text
         font-size: 16px
 
-/* Téléphones très petits */
-@media (max-width: 320px) 
-/* Téléphones petits */
-@media (max-width: 480px) 
 /* Téléphones moyens à grands */
 @media (max-width: 768px) 
+    .about-left
+        width: 56%
+
+/* Téléphones petits */
+@media (max-width: 480px) 
+    .about-left
+        width: 50%
+        span
+            display: none
+    .about-circle
+        bottom: -60px
+        right: -100px
+        height: 120px
+        width: 120px
+    .about-img-container svg
+        right: -54px
+        bottom: -10px
+    .text
+        font-size: 15px
+        width: 70%
+    .about-text
+        width: 100%
+        gap: 0
+    .about-infos
+        flex-direction: column
+
+/* Téléphones petits */
+@media (max-width: 430px)
+    .about-left
+        width: 48%
+        img
+            width: 270px
+    .about-img-container svg
+        font-size: 20px
+        right: -60px
+        bottom: 0px
+    .about-circle
+        width: 100px
+        height: 100px
+        bottom: -40px
+
+/* Téléphones petits */
+@media (max-width: 425px)
+    .about-left
+        width: 49%
+    .about-circle
+        right: -80px
+    .about-img-container svg
+        right: -40px
+
+@media (max-width: 393px) 
+    .about-left
+        width: 53%
+
+@media (max-width: 375px) 
+    .about-right
+        p
+            font-size: 14px
+        h1
+            font-size: 30px
+        h3
+            font-size: 15px
+    .about-left
+        width: 51%
+        img
+            width: 250px
+
+@media (max-width: 360px)
+    .about-left
+        width: 48%
+        img
+            width: 230px
+    .about-circle
+        width: 80px
+        height: 80px
+        bottom: -30px
+    .about-img-container svg
+        font-size: 15px
+        right: -47px
+        bottom: 3px
+
+/* Téléphones très petits */
+@media (max-width: 320px) 
+    .about-left
+        width: 50%
+        img
+            width: 200px
+    .about-right
+        h1
+            font-size: 25px
+        h3
+            font-size: 14px
+    .text
+        font-size: 13px

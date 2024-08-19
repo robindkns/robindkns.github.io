@@ -48,7 +48,7 @@ const BurgerMenu = () => {
                     <div>
                         <a href="https://linkedin.com/in/robin-lefèvre" rel="noreferrer" target='_blank'><LinkedinLogo weight="duotone" /></a>
                         <a href="https://github.com/robindkns" rel="noreferrer" target='_blank'><PiGithubLogoDuotone /></a>
-                        <a href="www.linkedin.com/in/robin-lefèvre" target='_blank'><BehanceLogo weight="duotone" /></a>
+                        <a href="https://www.behance.net/robinlefvre" rel="noreferrer" target='_blank'><BehanceLogo weight="duotone" /></a>
                     </div>
                 </div>
             </nav>

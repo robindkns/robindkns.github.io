@@ -8,7 +8,8 @@ nav
     height: 15vh
     align-items: center
     z-index: 10
-    transition: 0.5s
+    transition: 0.3s
+    overflow: hidden
     ul
         display: flex
         align-items: center
@@ -123,8 +124,18 @@ nav
         ul
             display: none
 
-/* Téléphones très petits */
-@media (max-width: 320px) 
 /* Téléphones petits */
 @media (max-width: 480px) 
+    nav button
+        width: 30%
 
+
+/* Téléphones petits */
+@media (max-width: 393px) 
+    nav button
+        font-size: 12px
+
+/* Téléphones très petits */
+@media (max-width: 355px) 
+    nav button
+        font-size: 10px
