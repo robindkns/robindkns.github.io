@@ -52,27 +52,42 @@
 .circle-bg
     background-color: black
     border-radius: 50%
-    width: 250px
-    height: 250px
+    width: 400px
+    height: 400px
     opacity: 0.3
-    animation: reduce-grow 8s infinite ease-in-out
+    animation: reduce-grow 10s infinite ease-in-out
 
 #job
     color: #81ecec
 
 @keyframes reduce-grow
     0%
-        width: 50%
-        height: 50%
+        scale: 1
     50%
-        width: 60%
-        height: 60%
+        scale: 1.2
     100%
-        width: 50%
-        height: 50%
+        scale: 1
+
+@media (max-width: 2560px) 
+    .circle-bg
+        width: 650px
+        height: 650px
+
+@media (max-width: 1800px) 
+    .circle-bg
+        width: 400px
+        height: 400px
+
+@media (max-width: 1440px) 
+    .circle-bg
+        width: 400px
+        height: 400px
 
 /* Tablettes */
 @media (max-width: 1024px) 
+    .circle-bg
+        width: 300px
+        height: 300px
     .home-left
         h1
             font-size: 80px
@@ -104,6 +119,9 @@
 
 /* Téléphones petits */
 @media (max-width: 480px)
+    .circle-bg
+        width: 200px
+        height: 200px
     .home-left
         h1
             font-size: 50px

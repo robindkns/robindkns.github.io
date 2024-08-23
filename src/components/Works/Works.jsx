@@ -10,10 +10,18 @@ import IMGUzumi from '../../assets/uzumi.png'
 import IMGRoyella from '../../assets/royella.png'
 import IMGGameHaven from '../../assets/gamehaven.png'
 import IMGMolengeek from '../../assets/molengeek.png'
+import IMGPokeLegends from '../../assets/pokelegends.png'
+import IMGMulti from '../../assets/multistep.png'
+import IMGManga from '../../assets/manga.png'
+import IMGta from '../../assets/cardgame.png'
 import VideoUzumi from '../../assets/uzumi.mp4'
 import VideoMolengeek from '../../assets/molengeek.mp4'
 import VideoGameHaven from '../../assets/gamehaven.mp4'
 import VideoRoyella from '../../assets/royella.mp4'
+import VideoPokeLegends from '../../assets/pokelegends.mp4'
+import VideoManga from '../../assets/manga.mp4'
+import VideoMulti from '../../assets/multistepform.mp4'
+import VideoGTA from '../../assets/cardgame.mp4'
 
 export default function Works() {
 
@@ -31,10 +39,34 @@ export default function Works() {
             "video": VideoRoyella
         },
         {
-            "language": ["NextJS", "Redux", "Sass"],
+            "language": ["NextJS", "Redux", "Sass","API"],
             "name": "GameHaven - Final Project of Frontend Developer Training",
             "image": IMGGameHaven,
             "video": VideoGameHaven
+        },
+        {
+            "language": ["Javascript", "HTML", "Sass"],
+            "name": "PokeLegends - Short Game in Javascript",
+            "image": IMGPokeLegends,
+            "video": VideoPokeLegends
+        },
+        {
+            "language": ["ReactJS", "API","Redux", "Sass"],
+            "name": "Top Anime - API Project",
+            "image": IMGManga,
+            "video": VideoManga
+        },
+        {
+            "language": ["ReactJS","Sass"],
+            "name": "MultiStepForm - UseState Project",
+            "image": IMGMulti,
+            "video": VideoMulti
+        },
+        {
+            "language": ["HTML", "JavaScript", "Sass"],
+            "name": "GTA Card Game - DOM Javascript Project",
+            "image": IMGta,
+            "video": VideoGTA
         },
         {
             "language": ["HTML", "Sass", "JavaScript"],
