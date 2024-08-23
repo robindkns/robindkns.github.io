@@ -1,28 +1,36 @@
 {
   "files": {
-    "main.css": "/static/css/main.11dc965e.css",
-    "main.js": "/static/js/main.17659960.js",
+    "main.css": "/static/css/main.b3840bd8.css",
+    "main.js": "/static/js/main.a1fe3dff.js",
     "static/media/royella.mp4": "/static/media/royella.cf79effb3031241b4687.mp4",
     "static/media/gamehaven.mp4": "/static/media/gamehaven.49d0a5c537eae734a346.mp4",
+    "static/media/cardgame.mp4": "/static/media/cardgame.b4ab412a0c6cd8ebabdc.mp4",
     "static/media/molengeek.mp4": "/static/media/molengeek.f714d9273c4dfdd25e4b.mp4",
+    "static/media/manga.mp4": "/static/media/manga.5cab41ca92cf53cad3b1.mp4",
+    "static/media/pokelegends.mp4": "/static/media/pokelegends.1c39a163592bf2bc5353.mp4",
     "static/media/uzumi.mp4": "/static/media/uzumi.7ad7ff8c7fbf6b93b7a2.mp4",
     "static/media/royella.png": "/static/media/royella.e63ef4005b0f82fb97cf.png",
+    "static/media/cardgame.png": "/static/media/cardgame.f71ade813dfb265ff572.png",
+    "static/media/pokelegends.png": "/static/media/pokelegends.7cf741fcc1d6b2f77303.png",
     "static/media/gamehaven.png": "/static/media/gamehaven.1a7be8a90234c4db9408.png",
     "static/media/bg-skills.png": "/static/media/bg-skills.f6f16100c1255051c28c.png",
     "static/media/uzumi.png": "/static/media/uzumi.5217755a1bd93ce5f2fc.png",
     "static/media/molengeek.png": "/static/media/molengeek.017ed493ee85a5652a13.png",
+    "static/media/manga.png": "/static/media/manga.e2355a06d23924fb8874.png",
+    "static/media/multistepform.mp4": "/static/media/multistepform.f569e778825e15cf9581.mp4",
     "static/media/bg-home.jpg": "/static/media/bg-home.e34a37e9ad5320418759.jpg",
     "static/media/robin-about.png": "/static/media/robin-about.0c07060ab3ec7ca7b0fa.png",
     "static/media/experience-bg.jpg": "/static/media/experience-bg.c7847d15385f52b5ff25.jpg",
     "static/media/formation-bg.jpg": "/static/media/formation-bg.285b892bdd8b9aa56143.jpg",
     "static/media/CVWebDev.png": "/static/media/CVWebDev.16d269c375165c4bf956.png",
+    "static/media/multistep.png": "/static/media/multistep.a893e29032dea4d5c02a.png",
     "static/media/circle-download.PNG": "/static/media/circle-download.4d027cc329948c3fb62d.PNG",
     "index.html": "/index.html",
-    "main.11dc965e.css.map": "/static/css/main.11dc965e.css.map",
-    "main.17659960.js.map": "/static/js/main.17659960.js.map"
+    "main.b3840bd8.css.map": "/static/css/main.b3840bd8.css.map",
+    "main.a1fe3dff.js.map": "/static/js/main.a1fe3dff.js.map"
   },
   "entrypoints": [
-    "static/css/main.11dc965e.css",
-    "static/js/main.17659960.js"
+    "static/css/main.b3840bd8.css",
+    "static/js/main.a1fe3dff.js"
   ]
 }
