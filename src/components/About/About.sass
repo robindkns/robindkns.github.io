@@ -5,32 +5,35 @@
     display: flex
     justify-content: center
     align-items: center
+    gap: 80px
+    overflow: hidden
 
 .about-left
     width: 40%
-    height: 80%
+    height: 100%
     display: flex
     align-items: center
     justify-content: right
+    position: relative
     span
         color: #b9b6b549
         font-size: 170px
         transform: rotate(-90deg) translateY( 95% )
         font-weight: 600
-        margin-top: 100px
+        padding-top: 50px
+        // position: absolute
+        // left: 0
 
 .about-img-container
-    position: relative
+    // position: relative
     width: 100%
     height: 90%
-    margin-right: 15%
     img
-        border-radius: 10px
-        width: 350px
+        width: 450px
     svg
         font-size: 25px
         position: absolute
-        bottom: -15px
+        bottom: 65px
         right: -18px
         color: #81ecec
         transition: 0.3s
@@ -39,7 +42,7 @@
 
 .about-circle
     position: absolute
-    bottom: -80px
+    bottom: 0px
     right: -80px
     background-image: url(../../assets/circle-download.PNG)
     background-size: cover
@@ -108,11 +111,16 @@
 @media (min-width: 2560px)
     .about-left
         span
-            font-size: 275px
+            font-size: 280px
+            padding-top: 80px
+    .about-circle
+        bottom: 80px
     .about-img-container
         img
-            width: 540px
+            width: 850px
             margin-bottom: 60px
+        svg
+            bottom: 145px
     .about-right
         h1
             font-size: 60px
@@ -129,15 +137,15 @@
             font-size: 205px
     .about-img-container
         img
-            width: 400px
+            width: 650px
 
 @media (max-width: 1800px)
     .about-left
         span
-            font-size: 180px
+            font-size: 200px
     .about-img-container
         img
-            width: 350px
+            width: 555px
 
 /* Ordinateurs de bureau */
 @media (max-width: 1440px)
@@ -148,12 +156,20 @@
             font-size: 17px
     .about-text
         font-size: 16px
+    .about-left
+        span
+            font-size: 180px
+    .about-img-container
+        img
+            width: 490px
 
 /* Ordinateurs portables */
 @media (max-width: 1280px) 
     .about-left
         img
-            width: 370px
+            width: 480px
+        span
+            font-size: 160px
     .about-right
         h1
             font-size: 35px
@@ -167,13 +183,14 @@
     .about
         flex-direction: column
         height: auto
+        gap: 0
     .about-left
-        padding-top: 100px
+        padding-top: 50px
         span
-            font-size: 190px
-            margin-top: 190px
+            font-size: 150px
+            padding-top: 40px
         img
-            width: 300px
+            width: 390px
     .about-right
         width: 80%
         padding-bottom: 100px
@@ -181,6 +198,11 @@
         font-size: 16px
     .text
         font-size: 16px
+    .about-circle
+        bottom: -60px
+    .about-img-container
+        svg
+            bottom: 5px
 
 /* Téléphones moyens à grands */
 @media (max-width: 768px) 
@@ -190,17 +212,22 @@
 /* Téléphones petits */
 @media (max-width: 480px) 
     .about-left
-        width: 50%
+        width: 70%
+        padding-top: 0
         span
             display: none
     .about-circle
         bottom: -60px
-        right: -100px
+        right: -10px
         height: 120px
         width: 120px
-    .about-img-container svg
-        right: -54px
-        bottom: -10px
+    .about-img-container 
+        img
+            width: 300px
+        svg
+            right: 40px
+            bottom: -5px
+            font-size: 20px
     .text
         font-size: 15px
         width: 70%
@@ -213,36 +240,20 @@
 /* Téléphones petits */
 @media (max-width: 430px)
     .about-left
-        width: 48%
         img
             width: 270px
     .about-img-container svg
-        font-size: 20px
-        right: -60px
+        right: 30px
         bottom: 0px
     .about-circle
         width: 100px
         height: 100px
         bottom: -40px
 
-/* Téléphones petits */
-@media (max-width: 425px)
-    .about-left
-        width: 49%
-    .about-circle
-        right: -80px
-    .about-img-container svg
-        right: -40px
-
 @media (max-width: 400px) 
     .about-left
-        width: 50%
         img
             width: 260px
-
-@media (max-width: 393px) 
-    .about-left
-        width: 53%
 
 @media (max-width: 375px) 
     .about-right
@@ -253,28 +264,27 @@
         h3
             font-size: 15px
     .about-left
-        width: 51%
         img
             width: 250px
 
 @media (max-width: 360px)
     .about-left
-        width: 48%
         img
             width: 230px
     .about-circle
         width: 80px
         height: 80px
         bottom: -30px
+        right: 0px
     .about-img-container svg
         font-size: 15px
-        right: -47px
+        right: 32px
         bottom: 3px
 
 /* Téléphones très petits */
 @media (max-width: 320px) 
     .about-left
-        width: 50%
+        width: 65%
         img
             width: 200px
     .about-right
@@ -284,3 +294,7 @@
             font-size: 14px
     .text
         font-size: 13px
+    .about-circle
+        right: -15px
+    .about-img-container svg
+        right: 18px

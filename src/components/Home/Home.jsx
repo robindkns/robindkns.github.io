@@ -1,5 +1,6 @@
 import './Home.sass';
 import Typewriter from '../Typewriter/Typewriter';
+import urlRobinHome from '../../assets/mimsynet.PNG';
 
 export default function Home() {
     return (
@@ -12,6 +13,7 @@ export default function Home() {
                     <h2>A Passionate <Typewriter /></h2>
                 </div>
                 <div className="home-right">
+                <img src={urlRobinHome} alt="Robin Lefèvre" />
                     <div className="circle-bg"></div>
                 </div>
             </div>

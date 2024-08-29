@@ -46,17 +46,21 @@
 .home-right
     width: 60%
     display: flex
-    align-items: center
+    align-items: flex-end
     justify-content: center
+    img
+        width: 550px
 
 .circle-bg
     background-color: black
     border-radius: 50%
-    width: 400px
-    height: 400px
-    opacity: 0.3
+    width: 550px
+    height: 550px
+    opacity: 0.15
     animation: reduce-grow 10s infinite ease-in-out
-
+    position: absolute
+    z-index: -1
+    top: 200px
 #job
     color: #81ecec
 
@@ -68,26 +72,42 @@
     100%
         scale: 1
 
-@media (max-width: 2560px) 
+@media (max-width: 2560px)
+    .home-right img
+        width: 800px
     .circle-bg
-        width: 650px
-        height: 650px
+        width: 600px
+        height: 600px
+        top: 400px
+
+/* Écrans larges et ultra-larges */
+@media (max-width: 1920px)
+    .home-right img
+        width: 600px
+    .circle-bg
+        top: 220px
 
 @media (max-width: 1800px) 
+    .home-right img
+        width: 550px
     .circle-bg
-        width: 400px
-        height: 400px
+        width: 500px
+        height: 500px
+        top: 180px
 
 @media (max-width: 1440px) 
     .circle-bg
-        width: 400px
-        height: 400px
+        width: 450px
+        height: 450px
+        top: 280px
+    .home-right img
+        width: 500px
 
 /* Tablettes */
 @media (max-width: 1024px) 
     .circle-bg
-        width: 300px
-        height: 300px
+        width: 400px
+        height: 400px
     .home-left
         h1
             font-size: 80px
@@ -116,22 +136,32 @@
     .home-right
         width: 100%
         height: 50%
+        img
+            width: 350px
+    .circle-bg
+        width: 280px
+        height: 280px
+        top: 470px
 
 /* Téléphones petits */
 @media (max-width: 480px)
     .circle-bg
-        width: 200px
-        height: 200px
+        width: 250px
+        height: 250px
+        top: 480px
+    .home-right img
+        width: 300px
     .home-left
         h1
             font-size: 50px
         h3
             font-size: 15px
+            margin-top: 100px
         h2
             font-size: 20px
 
 /* Téléphones petits */
-@media (max-width: 425px)
+@media (max-width: 430px)
     .home-left
         width: 95%
         h1
@@ -140,3 +170,10 @@
             font-size: 15px
         h2
             font-size: 15px
+
+@media (max-width: 400px)
+    .home-right img
+        width: 280px
+    .circle-bg
+        width: 250px
+        height: 250px

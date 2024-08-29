@@ -1,6 +1,6 @@
 import './About.sass';
 
-import URLRobin from '../../assets/robin-about.png';
+import URLRobin from '../../assets/bonmoutonalait.png';
 import CV from '../../assets/CVWebDev.png';
 import { FaDownload } from "react-icons/fa6";
 
