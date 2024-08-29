@@ -1,6 +1,6 @@
 import './Home.sass';
 import Typewriter from '../Typewriter/Typewriter';
-import urlRobinHome from '../../assets/mimsynet.PNG';
+import urlRobinHome from '../../assets/mimsyblanc.PNG';
 
 export default function Home() {
     return (
