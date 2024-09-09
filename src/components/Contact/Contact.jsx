@@ -1,9 +1,50 @@
 import './Contact.sass';
 
+import emailjs from '@emailjs/browser';
+import { useState } from 'react';
+
 import { Envelope, PhoneCall, NavigationArrow, Atom, LinkedinLogo, BehanceLogo } from 'phosphor-react';
 import { PiGithubLogoDuotone } from 'react-icons/pi';
 
 export default function Contact() {
+
+    const [formData, setFormData] = useState({
+        email: '',
+        subject: '',
+        message: '',
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value,
+        });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (formData.email === '' || formData.subject === '' || formData.message === '') {
+            alert('Please, fill in all the fields');
+            return;
+        } else {
+            emailjs.send(
+                'service_5vxoars',
+                'template_af1cooa',
+                formData,
+                'm18543kRJjnlR_RsO'
+            ).then((response) => {
+                console.log('SUCCESS!', response.status, response.text);
+                setFormData({ email: '', subject: '', message: '' });
+                alert('Email envoyé avec succès !');
+            }).catch((err) => {
+                console.error('Échec lors de l\'envoi de l\'email:', err);
+                alert('Erreur lors de l\'envoi de l\'email. Veuillez réessayer.');
+            });
+        }
+    };
+
+
     return (
         <section className="contact" id="contact">
             <div className="contact-header">
@@ -33,11 +74,11 @@ export default function Contact() {
                     <div className="form-container">
                         <form>
                             <div className='input-container'>
-                                <input type="text" placeholder='Your Email' />
-                                <input type="text" placeholder='Your Subject' />
+                                <input type="text" placeholder='Your Email' onChange={handleChange} name='email' value={formData.email} required />
+                                <input type="text" placeholder='Your Subject' onChange={handleChange} name='subject' value={formData.subject} required />
                             </div>
-                            <textarea placeholder='Your Message' />
-                            <button type='submit'>SEND</button>
+                            <textarea placeholder='Your Message' onChange={handleChange} value={formData.message} required name='message'/>
+                            <button type='submit' onClick={handleSubmit}>SEND</button>
                         </form>
                     </div>
                 </div>
