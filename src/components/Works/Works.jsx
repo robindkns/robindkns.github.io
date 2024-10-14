@@ -120,7 +120,7 @@ export default function Works() {
     return (
         <section className="works" id="works" style={{ height: height }}>
             <div className="works-header">
-                <h3>Portfolio</h3>
+                <h3>WORKS</h3>
                 <h1>My Latest Projects</h1>
             </div>
             <div className="works-body">

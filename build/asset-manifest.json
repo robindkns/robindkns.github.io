@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d16f53ae.css",
-    "main.js": "/static/js/main.c9ba295c.js",
+    "main.css": "/static/css/main.e259c3a7.css",
+    "main.js": "/static/js/main.41e486ab.js",
     "static/media/royella.mp4": "/static/media/royella.cf79effb3031241b4687.mp4",
     "static/media/gamehaven.mp4": "/static/media/gamehaven.49d0a5c537eae734a346.mp4",
     "static/media/cardgame.mp4": "/static/media/cardgame.b4ab412a0c6cd8ebabdc.mp4",
@@ -21,17 +21,17 @@
     "static/media/multistepform.mp4": "/static/media/multistepform.f569e778825e15cf9581.mp4",
     "static/media/bg-home.jpg": "/static/media/bg-home.e34a37e9ad5320418759.jpg",
     "static/media/mimsyblanc.PNG": "/static/media/mimsyblanc.adc2b6c951933bc51096.PNG",
+    "static/media/CVWebDev.png": "/static/media/CVWebDev.de1981882dbcce99820b.png",
     "static/media/experience-bg.jpg": "/static/media/experience-bg.c7847d15385f52b5ff25.jpg",
     "static/media/formation-bg.jpg": "/static/media/formation-bg.285b892bdd8b9aa56143.jpg",
-    "static/media/CVWebDev.png": "/static/media/CVWebDev.16d269c375165c4bf956.png",
     "static/media/multistep.png": "/static/media/multistep.a893e29032dea4d5c02a.png",
     "static/media/circle-download.PNG": "/static/media/circle-download.4d027cc329948c3fb62d.PNG",
     "index.html": "/index.html",
-    "main.d16f53ae.css.map": "/static/css/main.d16f53ae.css.map",
-    "main.c9ba295c.js.map": "/static/js/main.c9ba295c.js.map"
+    "main.e259c3a7.css.map": "/static/css/main.e259c3a7.css.map",
+    "main.41e486ab.js.map": "/static/js/main.41e486ab.js.map"
   },
   "entrypoints": [
-    "static/css/main.d16f53ae.css",
-    "static/js/main.c9ba295c.js"
+    "static/css/main.e259c3a7.css",
+    "static/js/main.41e486ab.js"
   ]
 }

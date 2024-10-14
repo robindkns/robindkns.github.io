@@ -1,0 +1,312 @@
+.other-skills
+    padding-top: 15px
+    display: flex
+    justify-content: space-between
+    h3
+        letter-spacing: 3px
+        color: #f8ebe7
+        font-size: 23px
+        font-weight: 500
+        font-style: italic
+    ul
+        display: flex
+        margin: 0
+        padding: 0
+        margin-top: 20px
+        gap: 50px
+
+.other-col
+    width: 50%
+    display: flex
+    flex-direction: column
+
+.other-col:nth-child(2) 
+    width: 50%
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+
+.languages-ip
+    list-style: none
+    margin: 0 0px
+
+.languages-ip
+    position: relative 
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 70px
+    height: 70px
+    text-align: center
+    line-height: 63px
+    background: #525048
+    border-radius: 50%
+    color: #f8ebe7
+    transition: 0.3s
+    overflow: hidden
+    svg
+        transition: 0.3s
+        font-size: 40px
+    span
+        opacity: 0
+        transition: 0.3s
+        font-size: 18px
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: clip
+
+.languages-ip::before 
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    border-radius: 50%
+    background: #81ecec
+    transition: 0.4s
+    transform: scale(1.9)
+    z-index: -1
+    transition: 0.3s
+
+.languages-ip:hover::before 
+    transform: scale(1.3)
+    box-shadow: 0 0 15px #81ecec
+
+.languages-ip:hover 
+    color: #81ecec
+    box-shadow: 0 0 5px #81ecec
+    text-shadow: 0 0 5px #81ecec
+    width: 180px
+    border-radius: 13px
+    span
+        opacity: 1
+
+.current-content
+    display: flex
+    align-items: center
+    gap: 10px
+
+.languages-ip-fund
+    position: relative 
+    display: flex
+    align-items: center
+    width: 70px
+    height: 70px
+    line-height: 63px
+    background: #525048
+    border-radius: 50%
+    color: #f8ebe7
+    transition: 0.3s
+    overflow: hidden
+    svg
+        font-size: 40px
+    span
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: clip
+        transition: 0.3s
+        font-size: 18px
+
+.fund-content
+    display: flex
+    align-items: center
+    margin-left: 15px
+    gap: 20px
+
+.languages-ip-fund::before 
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    border-radius: 50%
+    background: #81ecec
+    transition: 0.4s
+    transform: scale(1.9)
+    z-index: -1
+    transition: 0.3s
+
+.languages-ip-fund:hover::before 
+    transform: scale(1.3)
+    box-shadow: 0 0 15px #81ecec
+
+.languages-ip-fund:hover 
+    color: #81ecec
+    box-shadow: 0 0 5px #81ecec
+    text-shadow: 0 0 5px #81ecec
+    width: 160px
+    border-radius: 13px
+
+.languages-ip-fund:nth-child(2):hover 
+    color: #81ecec
+    box-shadow: 0 0 5px #81ecec
+    text-shadow: 0 0 5px #81ecec
+    width: 130px
+    border-radius: 13px
+
+
+@media (min-width: 1920px)
+    .other-skills
+        padding-top: 25px
+
+/* Ordinateurs portables */
+@media (max-width: 1280px) 
+    .other-skills h3
+        font-size: 22px
+    .languages-ip-fund
+        width: 60px
+        height: 60px
+        svg
+            font-size: 35px
+        span
+            font-size: 18px
+    .fund-content
+        margin-left: 13px
+    .languages-ip
+        width: 60px
+        height: 60px
+        svg
+            font-size: 35px
+        span
+            font-size: 18px
+
+/* Téléphones moyens à grands */
+@media (max-width: 768px)
+    .other-skills
+        padding-top: 30px
+        flex-direction: column
+        gap: 20px
+    .other-col
+        width: 80%
+    .other-col:nth-child(2)
+        align-items: flex-start
+    .current-content
+        margin-left: 13px
+        gap: 20px
+    .languages-ip
+        position: relative 
+        display: flex
+        align-items: center
+        justify-content: start
+        line-height: 63px
+        background: #525048
+        border-radius: 50%
+        color: #f8ebe7
+        transition: 0.3s
+        overflow: hidden
+    .languages-ip::before 
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        border-radius: 50%
+        background: #81ecec
+        transition: 0.4s
+        transform: scale(1.9)
+        z-index: -1
+        transition: 0.3s
+    .languages-ip:hover::before 
+        transform: scale(1.3)
+        box-shadow: 0 0 15px #81ecec
+    .languages-ip:hover 
+        color: #81ecec
+        box-shadow: 0 0 5px #81ecec
+        text-shadow: 0 0 5px #81ecec
+        width: 160px
+        border-radius: 13px
+    .languages-ip:nth-child(2):hover 
+        color: #81ecec
+        box-shadow: 0 0 5px #81ecec
+        text-shadow: 0 0 5px #81ecec
+        width: 200px
+        border-radius: 13px
+
+/* Téléphones petits */
+@media (max-width: 480px) 
+    .other-skills h3
+        font-size: 18px
+        width: 100%
+        text-align: center
+    .other-col
+        ul
+            width: 100%
+            justify-content: center
+            align-items: center
+            gap: 20px
+    .other-col:nth-child(2)
+        width: 100%
+        justify-content: center
+        ul
+            width: 100%
+            display: flex
+            align-items: center
+            gap: 20px
+    .languages-ip-fund span
+        font-size: 16px
+    .languages-ip span
+        font-size: 16px
+    .languages-ip:nth-child(2):hover 
+        width: 185px
+    .other-col
+        width: 100%
+        justify-content: center
+
+@media (max-width: 393px) 
+    .languages-ip-fund
+        width: 50px
+        height: 50px
+        svg
+            font-size: 28px
+        span
+            font-size: 14px
+    .languages-ip
+        width: 50px
+        height: 50px
+        svg
+            font-size: 28px
+        span
+            font-size: 14px
+    .languages-ip-fund:hover
+        width: 130px
+    .languages-ip:hover
+        width: 130px
+    .languages-ip:nth-child(2):hover 
+        width: 160px
+    .fund-content
+        margin-left: 11px
+    .current-content
+        margin-left: 11px
+
+@media (max-width: 340px)
+    .languages-ip-fund:hover
+        width: 120px
+    .languages-ip-fund:nth-child(2):hover
+        width: 95px
+    .fund-content
+        gap: 12px
+        margin-left: 8px
+    .current-content
+        gap: 10px
+        margin-left: 8px
+    .languages-ip-fund
+        width: 40px
+        height: 40px
+        svg
+            font-size: 25px
+        span
+            font-size: 14px
+    .languages-ip
+        width: 40px
+        height: 40px
+        svg
+            font-size: 25px
+        span
+            font-size: 14px
+    .languages-ip:hover
+        width: 110px
+    .languages-ip:nth-child(2):hover
+        width: 145px

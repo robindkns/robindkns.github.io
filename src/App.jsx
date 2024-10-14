@@ -1,6 +1,6 @@
 import './App.sass';
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -12,8 +12,8 @@ import Skills from './components/Skills/Skills.jsx';
 import Works from './components/Works/Works.jsx';
 import Experience from './components/Experience/Experience.jsx';
 import Formation from './components/Formation/Formation.jsx';
-// import Banner from './components/Banner/Banner.jsx';
 import Contact from './components/Contact/Contact.jsx';
+import Loading from './components/Loading/Loading.jsx';
 
 function App() {
 
@@ -23,6 +23,14 @@ function App() {
           once: true,     // Animation se déclenche une seule fois (ne se répète pas lors du scroll)
         });
     }, []);
+
+    const [loading, setLoading] = useState(true)
+    useEffect(() => {
+        setTimeout(() => setLoading(false), 3300)
+    }, [])
+    if (loading) {
+        return <Loading/>
+    }
 
     return (
         <div className='App'>
@@ -34,7 +42,6 @@ function App() {
             <Works/>
             <Experience />
             <Formation />
-            {/* <Banner /> */}
             <Contact />
         </div>
     );
