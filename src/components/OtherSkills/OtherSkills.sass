@@ -34,10 +34,8 @@
     position: relative 
     display: flex
     align-items: center
-    justify-content: center
     width: 70px
     height: 70px
-    text-align: center
     line-height: 63px
     background: #525048
     border-radius: 50%
@@ -45,15 +43,13 @@
     transition: 0.3s
     overflow: hidden
     svg
-        transition: 0.3s
         font-size: 40px
     span
-        opacity: 0
-        transition: 0.3s
-        font-size: 18px
         white-space: nowrap
         overflow: hidden
         text-overflow: clip
+        transition: 0.3s
+        font-size: 18px
 
 .languages-ip::before 
     content: ''
@@ -77,15 +73,19 @@
     color: #81ecec
     box-shadow: 0 0 5px #81ecec
     text-shadow: 0 0 5px #81ecec
-    width: 180px
+    width: 170px
     border-radius: 13px
     span
         opacity: 1
 
+.languages-ip:nth-child(2):hover 
+    width: 200px
+
 .current-content
     display: flex
     align-items: center
-    gap: 10px
+    margin-left: 15px
+    gap: 20px
 
 .languages-ip-fund
     position: relative 
@@ -179,9 +179,11 @@
         flex-direction: column
         gap: 20px
     .other-col
-        width: 80%
+        width: 100%
+        align-items: center
     .other-col:nth-child(2)
-        align-items: flex-start
+        width: 100%
+        align-items: center
     .current-content
         margin-left: 13px
         gap: 20px
