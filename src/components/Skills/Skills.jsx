@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { CountUp } from 'countup.js';
 import './Skills.sass';
+import OtherSkills from '../OtherSkills/OtherSkills';
 
 export default function Skills() {
     const [isVisible, setIsVisible] = useState(false);
@@ -82,9 +83,7 @@ export default function Skills() {
                         </div>
                     ))}
                 </div>
-                <div className="skills-footer">
-                    <p>Additionally, I also have a strong fundamental understanding of C, C++, and PHP</p>
-                </div>
+                <OtherSkills/>
             </div>
         </section>
     );
