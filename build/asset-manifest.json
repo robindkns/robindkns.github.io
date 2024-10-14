@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.0d8a62d4.css",
+    "main.css": "/static/css/main.e259c3a7.css",
     "main.js": "/static/js/main.41e486ab.js",
     "static/media/royella.mp4": "/static/media/royella.cf79effb3031241b4687.mp4",
     "static/media/gamehaven.mp4": "/static/media/gamehaven.49d0a5c537eae734a346.mp4",
@@ -27,11 +27,11 @@
     "static/media/multistep.png": "/static/media/multistep.a893e29032dea4d5c02a.png",
     "static/media/circle-download.PNG": "/static/media/circle-download.4d027cc329948c3fb62d.PNG",
     "index.html": "/index.html",
-    "main.0d8a62d4.css.map": "/static/css/main.0d8a62d4.css.map",
+    "main.e259c3a7.css.map": "/static/css/main.e259c3a7.css.map",
     "main.41e486ab.js.map": "/static/js/main.41e486ab.js.map"
   },
   "entrypoints": [
-    "static/css/main.0d8a62d4.css",
+    "static/css/main.e259c3a7.css",
     "static/js/main.41e486ab.js"
   ]
 }
