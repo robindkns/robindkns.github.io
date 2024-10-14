@@ -128,9 +128,13 @@
 
 /* Téléphones moyens à grands */
 @media (max-width: 768px) 
+    .skills
+        height: auto
+        padding-top: 50px
+        padding-bottom: 50px
     .skills-grid
         grid-template-columns: 1fr
-        gap: 0
+        gap: 10px
         margin-top: 50px
     .skills-header
         h1
@@ -142,24 +146,25 @@
 
 /* Téléphones petits */
 @media (max-width: 480px) 
+    .skill 
+        height: 100%
+        span
+            font-size: 20px
     .skills-content-container
-        height: 65%
+        height: 90%
+        font-size: 18px
     .percentage
         font-size: 30px
-    .skills-footer p
-        font-size: 17px
 
 /* Téléphones petits */
 @media (max-width: 425px) 
-    .skills-container
-        height: 80%
+    .skills-grid
+        gap: 15px
     .skill span
         font-size: 18px
         margin-left: 20px
     .percentage
         font-size: 24px
-    .skills-footer p
-        font-size: 15px
 
 
 @media (max-width: 393px) 
@@ -169,7 +174,3 @@
         font-size: 16px
     .skills-footer p
         font-size: 14px
-
-
-/* Téléphones très petits */
-@media (max-width: 320px) 
