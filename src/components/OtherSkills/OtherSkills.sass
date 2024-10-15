@@ -78,6 +78,9 @@
     span
         opacity: 1
 
+.languages-ip:nth-child(1):hover 
+    width: 200px
+
 .languages-ip:nth-child(2):hover 
     width: 200px
 
@@ -172,6 +175,11 @@
         span
             font-size: 18px
 
+/* Ordinateurs portables */
+@media (max-width: 1024px)
+    .current-content
+        margin-left: 13px
+
 /* Téléphones moyens à grands */
 @media (max-width: 768px)
     .other-skills
@@ -220,12 +228,14 @@
         text-shadow: 0 0 5px #81ecec
         width: 160px
         border-radius: 13px
-    .languages-ip:nth-child(2):hover 
+    .languages-ip:nth-child(1):hover 
         color: #81ecec
         box-shadow: 0 0 5px #81ecec
         text-shadow: 0 0 5px #81ecec
         width: 200px
         border-radius: 13px
+    .languages-ip:nth-child(2):hover 
+        width: 200px
 
 /* Téléphones petits */
 @media (max-width: 480px) 
@@ -251,6 +261,8 @@
         font-size: 16px
     .languages-ip span
         font-size: 16px
+    .languages-ip:nth-child(1):hover 
+        width: 185px
     .languages-ip:nth-child(2):hover 
         width: 185px
     .other-col
@@ -276,6 +288,8 @@
         width: 130px
     .languages-ip:hover
         width: 130px
+    .languages-ip:nth-child(1):hover 
+        width: 160px
     .languages-ip:nth-child(2):hover 
         width: 160px
     .fund-content
@@ -310,5 +324,7 @@
             font-size: 14px
     .languages-ip:hover
         width: 110px
+    .languages-ip:nth-child(1):hover
+        width: 145px
     .languages-ip:nth-child(2):hover
         width: 145px

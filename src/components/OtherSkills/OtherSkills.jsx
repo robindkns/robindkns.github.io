@@ -31,7 +31,7 @@ export default function OtherSkills() {
             icon: <TbBrandReactNative />
         },
         {
-            name: "Typescript",
+            name: "TypeScript",
             icon: <BiLogoTypescript />
         },
         {
