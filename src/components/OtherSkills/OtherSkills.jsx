@@ -7,7 +7,7 @@ import { BiLogoCPlusPlus } from "react-icons/bi";
 import { FaPhp } from "react-icons/fa6";
 import { FaAngular } from "react-icons/fa";
 import { TbBrandReactNative } from "react-icons/tb";
-import { FaVuejs } from "react-icons/fa";
+import { BiLogoTypescript } from "react-icons/bi";
 
 export default function OtherSkills() {
 
@@ -27,16 +27,16 @@ export default function OtherSkills() {
 
     const [currently, setCurrently] = useState([
         {
-            name: "Angular",
-            icon: <FaAngular />
-        },
-        {
             name: "React Native",
             icon: <TbBrandReactNative />
         },
         {
-            name: "Vue.js",
-            icon: <FaVuejs />
+            name: "Typescript",
+            icon: <BiLogoTypescript />
+        },
+        {
+            name: "Angular",
+            icon: <FaAngular />
         }
     ])
 
