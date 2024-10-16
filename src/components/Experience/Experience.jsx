@@ -1,7 +1,7 @@
 import './Experience.sass';
 import { useState } from 'react';
 
-import { MdWork } from "react-icons/md";
+import CVLine from '../ui/CVLine';
 
 
 export default function Experience() {
@@ -37,16 +37,17 @@ export default function Experience() {
                 <p>An unconventional career path marked by a professional transition driven by the decision to pursue a passion.</p>
                 <div className='experience-content' data-aos="fade-right">
                     {experiences.map((experience, index) => (
-                        <div key={index} className="experience-div" onMouseEnter={() => setHoveredIndex(index)} onMouseLeave={() => setHoveredIndex(null)}>
-                            <div className="experience-icon" style={{ animation : hoveredIndex === index  ? "rotateIcon 0.5s linear forwards" : "none", backgroundColor : hoveredIndex === index ? "#81ecec" : "transparent"}}>
-                                <MdWork style={{color : hoveredIndex === index ? "#6b665b" : "#81ecec"}}/>
-                            </div>
-                            <div className="experience-text">
-                                <h3>{experience.title}</h3>
-                                <h4><b>{experience.company}</b> | {experience.date}</h4>
-                                <p>{experience.description}</p>
-                            </div>
-                        </div>
+                        <CVLine 
+                            key={index} 
+                            index={index} 
+                            onMouseEnter={() => setHoveredIndex(index)} 
+                            onMouseLeave={() => setHoveredIndex(null)} 
+                            experience={experience} 
+                            hoveredIndex={hoveredIndex}
+                            divClass="experience-div"
+                            iconClass="experience-icon"
+                            textClass="experience-text"
+                        />
                     ))}
                 </div>
             </div>
