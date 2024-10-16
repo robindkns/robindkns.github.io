@@ -32,7 +32,7 @@ export default function Softskills() {
         {
             id: 4,
             icon: <FaUser />,
-            title: 'Fast learner',
+            title: 'Fast Learner',
             description: 'Committed to staying up-to-date with industry trends and continuously learning new technologies and skills.'
         }
     ]);
