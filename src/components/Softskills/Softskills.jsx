@@ -32,8 +32,8 @@ export default function Softskills() {
         {
             id: 4,
             icon: <FaUser />,
-            title: 'Fast Learner',
-            description: 'Committed to staying up-to-date with industry trends and continuously learning new technologies and skills.'
+            title: 'Autonomous',
+            description: 'Able to manage and complete tasks independently while ensuring alignment with team goals.'
         }
     ]);
 
