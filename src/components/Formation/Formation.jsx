@@ -1,8 +1,7 @@
 import { useState } from 'react'
 
 import './Formation.sass';
-
-import { IoSchool } from "react-icons/io5";
+import CVLine from '../ui/CVLine';
 
 export default function Formation() {
 
@@ -38,16 +37,17 @@ export default function Formation() {
                 <p>An educational journey that began with a solid foundation in I.T. during secondary school, providing the theoretical groundwork for a successful transition into digital development.</p>
                 <div className='formation-content' data-aos="fade-left">
                     {formations.map((formation, index) => (
-                        <div key={index} className="formation-div" onMouseEnter={() => setHoveredIndex(index)} onMouseLeave={() => setHoveredIndex(null)}>
-                            <div className="formation-icon" style={{ animation : hoveredIndex === index  ? "rotateIcon 0.5s linear forwards" : "none", backgroundColor : hoveredIndex === index ? "#81ecec" : "transparent"}}>
-                                <IoSchool style={{color : hoveredIndex === index ? "#6b665b" : "#81ecec"}}/>
-                            </div>
-                            <div className="formation-text">
-                                <h3>{formation.title}</h3>
-                                <h4><b>{formation.company}</b> | {formation.date}</h4>
-                                <p>{formation.description}</p>
-                            </div>
-                        </div>
+                        <CVLine 
+                            key={index} 
+                            index={index} 
+                            onMouseEnter={() => setHoveredIndex(index)} 
+                            onMouseLeave={() => setHoveredIndex(null)} 
+                            experience={formation} 
+                            hoveredIndex={hoveredIndex}
+                            divClass="formation-div"
+                            iconClass="formation-icon"
+                            textClass="formation-text"
+                        />
                     ))}
                 </div>
             </div>

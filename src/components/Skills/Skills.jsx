@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { CountUp } from 'countup.js';
 import './Skills.sass';
 import OtherSkills from '../OtherSkills/OtherSkills';
+import ProgressBar from '../ui/ProgressBar';
 
 export default function Skills() {
     const [isVisible, setIsVisible] = useState(false);
@@ -64,23 +65,7 @@ export default function Skills() {
             <div className="skills-body">
                 <div className="skills-grid">
                     {skills.map((skill, index) => (
-                        <div key={index} className="skills-container">
-                            <div className="skills-content-container">
-                                <div
-                                    className={`skill ${isVisible ? 'animate' : ''}`}
-                                    style={{ width: isVisible ? skill.percentage : '0%' }}
-                                >
-                                    <span>{skill.name}</span>
-                                </div>
-                                <div className='skills-line'></div>
-                            </div>
-                            <span
-                                className={`percentage ${isVisible ? 'animate' : ''}`}
-                                ref={el => percentageRefs.current[index] = el}
-                            >
-                                {isVisible ? '' : '0%'}
-                            </span>
-                        </div>
+                        <ProgressBar key={index} skill={skill} isVisible={isVisible} percentageRefs={percentageRefs} index={index} />
                     ))}
                 </div>
                 <OtherSkills/>

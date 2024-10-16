@@ -3,8 +3,7 @@ import { useEffect, useState } from 'react'
 
 import './Works.sass'
 import Modal from '../Modal/Modal';
-
-import { FaPlay } from "react-icons/fa";
+import Project from '../ui/Project';
 
 import IMGUzumi from '../../assets/uzumi.png'
 import IMGRoyella from '../../assets/royella.png'
@@ -125,24 +124,15 @@ export default function Works() {
             </div>
             <div className="works-body">
                 {projects.slice(0, visibleProjects).map((project, index) => (
-                    <div className="project-container" key={index} onMouseEnter={() => setHoveredIndex(index)} onMouseLeave={() => setHoveredIndex(null)}>
-                        <div className="project-language">
-                            {project.language.map((language, index) => (
-                                <span key={index}>{language}</span>
-                            ))}
-                        </div>
-                        <div className="project-name">
-                            <h3>{project.name}</h3>
-                        </div>
-                        <div className="project-image">
-                            {hoveredIndex === index ?
-                                <img src={project.image} alt={project.name} style={{ animation: "showRotate 0.5s ease-in-out forwards" }} />
-                                : <img src={project.image} alt={project.name} style={{ animation: "unshowRotate 0.5s ease-in-out forwards" }} />}
-                        </div>
-                        <div className="project-modal">
-                            <FaPlay onClick={openModal} />
-                        </div>
-                    </div>
+                    <Project 
+                        key={index} 
+                        onMouseEnter={() => setHoveredIndex(index)} 
+                        onMouseLeave={() => setHoveredIndex(null)} 
+                        project={project} 
+                        index={index} 
+                        hoveredIndex={hoveredIndex} 
+                        openModal={openModal} 
+                    />
                 ))}
                 {showModal ? <Modal setShowModal={setShowModal} showModal={showModal} closeModal={closeModal} video={hoveredVideo} /> : null}
                 <div className="works-footer">
