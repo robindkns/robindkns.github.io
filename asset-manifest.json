@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7c6ca4db.css",
-    "main.js": "/static/js/main.f882abc2.js",
+    "main.js": "/static/js/main.6e995bc9.js",
     "static/media/royella.mp4": "/static/media/royella.cf79effb3031241b4687.mp4",
     "static/media/portfolio_back.mp4": "/static/media/portfolio_back.4d311c655b0501ece09d.mp4",
     "static/media/gamehaven.mp4": "/static/media/gamehaven.49d0a5c537eae734a346.mp4",
@@ -30,10 +30,10 @@
     "static/media/circle-download.PNG": "/static/media/circle-download.4d027cc329948c3fb62d.PNG",
     "index.html": "/index.html",
     "main.7c6ca4db.css.map": "/static/css/main.7c6ca4db.css.map",
-    "main.f882abc2.js.map": "/static/js/main.f882abc2.js.map"
+    "main.6e995bc9.js.map": "/static/js/main.6e995bc9.js.map"
   },
   "entrypoints": [
     "static/css/main.7c6ca4db.css",
-    "static/js/main.f882abc2.js"
+    "static/js/main.6e995bc9.js"
   ]
 }
