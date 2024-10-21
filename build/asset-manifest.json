@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7c6ca4db.css",
+    "main.js": "/static/js/main.6e995bc9.js",
+    "static/media/royella.mp4": "/static/media/royella.cf79effb3031241b4687.mp4",
+    "static/media/portfolio_back.mp4": "/static/media/portfolio_back.4d311c655b0501ece09d.mp4",
+    "static/media/gamehaven.mp4": "/static/media/gamehaven.49d0a5c537eae734a346.mp4",
+    "static/media/cardgame.mp4": "/static/media/cardgame.b4ab412a0c6cd8ebabdc.mp4",
+    "static/media/bonmoutonalait.png": "/static/media/bonmoutonalait.9355a9f416962b3d04a2.png",
+    "static/media/molengeek.mp4": "/static/media/molengeek.f714d9273c4dfdd25e4b.mp4",
+    "static/media/manga.mp4": "/static/media/manga.5cab41ca92cf53cad3b1.mp4",
+    "static/media/pokelegends.mp4": "/static/media/pokelegends.1c39a163592bf2bc5353.mp4",
+    "static/media/uzumi.mp4": "/static/media/uzumi.7ad7ff8c7fbf6b93b7a2.mp4",
+    "static/media/royella.png": "/static/media/royella.e63ef4005b0f82fb97cf.png",
+    "static/media/portfolio_back.png": "/static/media/portfolio_back.4d308d8d5bbbd312ec6e.png",
+    "static/media/cardgame.png": "/static/media/cardgame.f71ade813dfb265ff572.png",
+    "static/media/pokelegends.png": "/static/media/pokelegends.7cf741fcc1d6b2f77303.png",
+    "static/media/gamehaven.png": "/static/media/gamehaven.1a7be8a90234c4db9408.png",
+    "static/media/bg-skills.png": "/static/media/bg-skills.f6f16100c1255051c28c.png",
+    "static/media/uzumi.png": "/static/media/uzumi.5217755a1bd93ce5f2fc.png",
+    "static/media/molengeek.png": "/static/media/molengeek.017ed493ee85a5652a13.png",
+    "static/media/manga.png": "/static/media/manga.e2355a06d23924fb8874.png",
+    "static/media/multistepform.mp4": "/static/media/multistepform.f569e778825e15cf9581.mp4",
+    "static/media/bg-home.jpg": "/static/media/bg-home.e34a37e9ad5320418759.jpg",
+    "static/media/mimsyblanc.PNG": "/static/media/mimsyblanc.adc2b6c951933bc51096.PNG",
+    "static/media/CVWebDev.png": "/static/media/CVWebDev.de1981882dbcce99820b.png",
+    "static/media/experience-bg.jpg": "/static/media/experience-bg.c7847d15385f52b5ff25.jpg",
+    "static/media/formation-bg.jpg": "/static/media/formation-bg.285b892bdd8b9aa56143.jpg",
+    "static/media/multistep.png": "/static/media/multistep.a893e29032dea4d5c02a.png",
+    "static/media/circle-download.PNG": "/static/media/circle-download.4d027cc329948c3fb62d.PNG",
+    "index.html": "/index.html",
+    "main.7c6ca4db.css.map": "/static/css/main.7c6ca4db.css.map",
+    "main.6e995bc9.js.map": "/static/js/main.6e995bc9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7c6ca4db.css",
+    "static/js/main.6e995bc9.js"
+  ]
+}
