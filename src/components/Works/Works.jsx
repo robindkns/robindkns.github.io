@@ -46,7 +46,7 @@ export default function Works() {
             "video": VideoGameHaven
         },
         {
-            "language": ["Python","Django","Bootstrap"],
+            "language": ["Python","Django","MySQL","Bootstrap"],
             "name": "Portfolio - Final Project of Backend Developer Training",
             "image": IMGPortfolio,
             "video": VideoPortfolio
