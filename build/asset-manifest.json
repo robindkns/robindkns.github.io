@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7c6ca4db.css",
-    "main.js": "/static/js/main.a84abc60.js",
+    "main.js": "/static/js/main.9fbbe06c.js",
     "static/media/royella.mp4": "/static/media/royella.cf79effb3031241b4687.mp4",
     "static/media/gamehaven.mp4": "/static/media/gamehaven.49d0a5c537eae734a346.mp4",
     "static/media/cardgame.mp4": "/static/media/cardgame.b4ab412a0c6cd8ebabdc.mp4",
@@ -28,10 +28,10 @@
     "static/media/circle-download.PNG": "/static/media/circle-download.4d027cc329948c3fb62d.PNG",
     "index.html": "/index.html",
     "main.7c6ca4db.css.map": "/static/css/main.7c6ca4db.css.map",
-    "main.a84abc60.js.map": "/static/js/main.a84abc60.js.map"
+    "main.9fbbe06c.js.map": "/static/js/main.9fbbe06c.js.map"
   },
   "entrypoints": [
     "static/css/main.7c6ca4db.css",
-    "static/js/main.a84abc60.js"
+    "static/js/main.9fbbe06c.js"
   ]
 }

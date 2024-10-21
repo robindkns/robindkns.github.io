@@ -9,12 +9,14 @@ import IMGUzumi from '../../assets/uzumi.png'
 import IMGRoyella from '../../assets/royella.png'
 import IMGGameHaven from '../../assets/gamehaven.png'
 import IMGMolengeek from '../../assets/molengeek.png'
+import IMGPortfolio from '../../assets/portfolio_back.png'
 import IMGPokeLegends from '../../assets/pokelegends.png'
 import IMGMulti from '../../assets/multistep.png'
 import IMGManga from '../../assets/manga.png'
 import IMGta from '../../assets/cardgame.png'
 import VideoUzumi from '../../assets/uzumi.mp4'
 import VideoMolengeek from '../../assets/molengeek.mp4'
+import VideoPortfolio from '../../assets/portfolio_back.mp4'
 import VideoGameHaven from '../../assets/gamehaven.mp4'
 import VideoRoyella from '../../assets/royella.mp4'
 import VideoPokeLegends from '../../assets/pokelegends.mp4'
@@ -42,6 +44,12 @@ export default function Works() {
             "name": "GameHaven - Final Project of Frontend Developer Training",
             "image": IMGGameHaven,
             "video": VideoGameHaven
+        },
+        {
+            "language": ["Python","Django","Bootstrap"],
+            "name": "Portfolio - Final Project of Backend Developer Training",
+            "image": IMGPortfolio,
+            "video": VideoPortfolio
         },
         {
             "language": ["Javascript", "HTML", "Sass"],
