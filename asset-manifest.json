@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.7c6ca4db.css",
-    "main.js": "/static/js/main.6e995bc9.js",
+    "main.js": "/static/js/main.53390fa2.js",
+    "static/media/whackamole.mp4": "/static/media/whackamole.f6d9720bbf61979b2505.mp4",
     "static/media/royella.mp4": "/static/media/royella.cf79effb3031241b4687.mp4",
     "static/media/portfolio_back.mp4": "/static/media/portfolio_back.4d311c655b0501ece09d.mp4",
     "static/media/gamehaven.mp4": "/static/media/gamehaven.49d0a5c537eae734a346.mp4",
@@ -20,6 +21,7 @@
     "static/media/uzumi.png": "/static/media/uzumi.5217755a1bd93ce5f2fc.png",
     "static/media/molengeek.png": "/static/media/molengeek.017ed493ee85a5652a13.png",
     "static/media/manga.png": "/static/media/manga.e2355a06d23924fb8874.png",
+    "static/media/whackamole.png": "/static/media/whackamole.a76c94add5854e9361e0.png",
     "static/media/multistepform.mp4": "/static/media/multistepform.f569e778825e15cf9581.mp4",
     "static/media/bg-home.jpg": "/static/media/bg-home.e34a37e9ad5320418759.jpg",
     "static/media/mimsyblanc.PNG": "/static/media/mimsyblanc.adc2b6c951933bc51096.PNG",
@@ -30,10 +32,10 @@
     "static/media/circle-download.PNG": "/static/media/circle-download.4d027cc329948c3fb62d.PNG",
     "index.html": "/index.html",
     "main.7c6ca4db.css.map": "/static/css/main.7c6ca4db.css.map",
-    "main.6e995bc9.js.map": "/static/js/main.6e995bc9.js.map"
+    "main.53390fa2.js.map": "/static/js/main.53390fa2.js.map"
   },
   "entrypoints": [
     "static/css/main.7c6ca4db.css",
-    "static/js/main.6e995bc9.js"
+    "static/js/main.53390fa2.js"
   ]
 }
